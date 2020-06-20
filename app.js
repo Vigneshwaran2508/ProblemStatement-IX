@@ -55,6 +55,6 @@ app.use(function(err, req, res, next) {
 });
 
 //module.exports = app;
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
-console.log("server listening on port "+port_number)
+//var port_number = server.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT||3000);
+console.log("server listening on port")
