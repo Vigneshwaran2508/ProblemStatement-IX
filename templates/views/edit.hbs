@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    
+
+<head>
+    <title>Edit Product</title>
+    <h3>XYZ COMPANY</h3>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    
+    <div class="main-content">
+        {{>header}}
+        <p style="color: whitesmoke;">Edit a product</p>
+        <div id="form">
+           
+                <label>Product Id:</label><br><br>
+                <input id="productId" type="text" placeholder=" Enter Product ID"/><br><br>
+                <label>Product Tilte:</label><br/><br/>
+                <input id="title" type="text" placeholder=" Enter the product title"/><br/><br/>
+                <label>Product Image url :</label><br/><br/>
+                <input id="url" type="text" placeholder=" Enter the product img Url link"/><br/><br/>
+                <label>Product Description:</label><br/><br/>
+                <textarea id="desc" type="text" placeholder=" Enter the Description"></textarea><br/><br/>
+                <button onclick="show()">Update</button>
+                
+        </div>  
+    
+    </div>
+
+
+    <script> 
+            function show() { 
+                
+                console.log("in");
+                var id=document.getElementById("productId").value;
+                var title =document.getElementById("title").value; 
+                var url =document.getElementById("url").value; 
+                var desc =document.getElementById("desc").value; 
+                var data={"id":id,
+                "Name":title,
+                "imgsrc":url,
+                "description":desc
+                }                
+                
+                fetch("/editproduct",{ 
+                    method: "POST", 
+                    body: JSON.stringify(data), 
+                    headers: { 
+                        "Content-type": "application/json; charset=UTF-8"
+                    } 
+                }) 
+                .then(response => response.json()) 
+                .then(json => console.log(json)); 
+                                
+                 } 
+
+  </script>
+
+    
+    
+    {{>footer}}
+</body>
+
+</html>

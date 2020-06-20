@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
+body {
+    color:black;
+    font-family: arial;
+    padding: 0 16px;
+    
+    background-color:whitesmoke;
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: whitesmoke;
+    border-top: 2px solid #eeeeee;
+    margin-top: 1000px;
+    padding: 16px 0;
+}
+
+header {
+    margin-bottom: 48px;
+    
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 4px;
+    text-decoration: none;
+}
+header{
+    border-bottom: 6px soild black;
+}
+.portrait {
+    width: 250px;
+}
+#form{
+    border: 5px solid white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+    color: beige;
+    font-size: 40px;
+
+}
+label{
+    font-weight: bold ;
+    margin-left: 30px;
+    color: aliceblue;
+
+}
+input{
+    padding: 10px;
+    width: 550px;
+    height: 15px;
+    margin-left: 20px;
+    
+    font-size:15px;
+    color:black;
+    border-radius: 6px;
+    
+}input:hover{
+    border-color: white;
+    background-color:whitesmoke;
+}
+textarea{
+    width: 550px;
+    height: 200px;
+    margin-left: 20px;
+    
+    color: black;
+    font-size:15px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+textarea:hover{
+    border-color: white;
+    background-color:whitesmoke;
+}
+button{
+    width: 180px;
+    height: 50px;
+    margin-left: 20px;
+    
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #e9dede;
+
+}
+button:hover{
+    background-color: lightblue;
+    
+}
+::placeholder {
+    color:rgb(27, 23, 23);
+    opacity: 1;
+}
+#btn{
+        width: 130px;
+        height: 40px;
+        margin-left: 20px;
+        cursor: pointer;
+        border-radius: 6px;
+        background-color: rgb(173, 228, 118);
+}
+#font{
+    color:white;
+    font-style: italic;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 180px;
+    font-size: 40px;
+}
